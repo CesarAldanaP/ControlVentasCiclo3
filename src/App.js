@@ -4,6 +4,8 @@ import Banner from './Componentes/Banner'
 import Board from './Componentes/Board'
 import Usuarios from './Componentes/Usuarios'
 import Productos from './Componentes/Productos'
+import Ventas from './Componentes/Ventas'
+
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <Board/>
       <Usuarios/>
       <Productos/>
+      <Ventas/>
     </div>
   );
 }

@@ -19,10 +19,10 @@ class Usuarios extends React.Component {
     render() {
         return (
             <>
-                <Container> 
+                <Container>
                     <br /><br /><a>Usuarios</a><br /><br />
                     <Button color="success">Agregar Usuario</Button>
-                    <br/><br/>
+                    <br /><br />
                     <Table>
                         <thead><tr><th>ID</th>
                             <th>Nombre</th>
@@ -45,7 +45,34 @@ class Usuarios extends React.Component {
                         </tbody>
                     </Table>
                 </Container>
+                <Container>
+                    <br /><br /><a>Agregar Usuario</a><br /><br />
+                    <Table>
+                        <thead><tr><th>ID</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Rol</th>
+                            <th>Estado</th>
+                            <th>Acciones</th></tr></thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text"></input></td>
+                                <td><input type="text"></input></td>
+                                <td><input type="text"></input></td>
+                                <td>
+                                    <select>
+                                        <option>Vendedor</option>
+                                        <option>Administrador</option>
+                                    </select>
+                                </td>
+                                <td><input type="text"></input></td>
+                                <td><Button color="primary">Guardar</Button></td>
+                            </tr>
+                        </tbody>
+                    </Table>
+                </Container>
             </>
-        )}
+        )
+    }
 }
 export default Usuarios;

@@ -12,7 +12,7 @@ const data = [
     { id: 6, Nombre: " Teclado ", Referencia: " Logitech ", Marca: "Logitech", VUnit: " 65000 ", },
 ];
 
-class Productos extends React.Component {
+class Ventas extends React.Component {
     state = {
         data: data,
     };
@@ -20,8 +20,8 @@ class Productos extends React.Component {
         return (
             <>
                 <Container>
-                    <br /><br /><a>Productos</a><br /><br />
-                    <Button color="success">Agregar Producto</Button>
+                    <br /><br /><a>Ventas</a><br /><br />
+                    <Button color="success">Agregar Venta</Button>
                     <br /><br />
                     <Table>
                         <thead><tr><th>ID</th>
@@ -46,7 +46,7 @@ class Productos extends React.Component {
                     </Table>
                 </Container>
                 <Container>
-                    <br /><br /><a>Agregar Producto</a><br /><br />
+                    <br /><br /><a>Agregar Venta</a><br /><br />
                     <Table>
                         <thead><tr><th>ID</th>
                             <th>Nombre</th>
@@ -55,14 +55,14 @@ class Productos extends React.Component {
                             <th>Valor Unitario</th>
                             <th>Acciones</th></tr></thead>
                         <tbody>
-                            <tr>
-                                <td>7</td>
-                                <td><input type="text"></input></td>
-                                <td><input type="text"></input></td>
-                                <td><input type="text"></input></td>
-                                <td><input type="number"></input></td>
-                                <td><Button color="success">Guardar</Button></td>
-                            </tr>
+                                <tr>
+                                    <td><input type="text"></input></td>
+                                    <td><input type="text"></input></td>
+                                    <td><input type="text"></input></td>
+                                    <td><input type="text"></input></td>
+                                    <td><input type="text"></input></td>
+                                    <td><Button color="primary">Guardar</Button></td>
+                                </tr>
                         </tbody>
                     </Table>
                 </Container>
@@ -70,4 +70,4 @@ class Productos extends React.Component {
         )
     }
 }
-export default Productos;
+export default Ventas;
