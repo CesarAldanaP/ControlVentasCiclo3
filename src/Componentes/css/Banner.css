@@ -1,0 +1,52 @@
+.banner{
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background: #017bf5;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999999;
+}
+.banner .logo{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight:750;
+    left: 3%;
+    letter-spacing: 0.5px;
+}
+.banner ul{
+    position: relative;
+    height: 100%;
+    width: 20%;
+}
+.banner ul li{    
+    list-style-type: none;
+    display: inline-block;
+    width: auto;
+    height: inherit;
+    transition:0.3s linear;
+}
+.banner ul li a{
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding:0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 550;
+    letter-spacing: 0.5px;
+    transition:0.3s linear;
+}
+.banner ul li:hover a,
+.banner ul li.active a{
+    background: #fff;
+    color: #017bf5;
+}
