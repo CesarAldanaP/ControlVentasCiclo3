@@ -12,6 +12,14 @@ const data = [
     { id: 6, Nombre: " Teclado ", Referencia: " Logitech ", Marca: "Logitech", VUnit: " 65000 ", },
 ];
 
+const agregar = () => {
+    window.alert("Venta Agregada Exitosamente")
+}
+
+const editar = () => {
+    window.alert("Venta Editada Exitosamente")
+}
+
 class Ventas extends React.Component {
     state = {
         data: data,
@@ -61,8 +69,29 @@ class Ventas extends React.Component {
                                     <td><input type="text"></input></td>
                                     <td><input type="text"></input></td>
                                     <td><input type="text"></input></td>
-                                    <td><Button color="primary">Guardar</Button></td>
+                                <td><Button onClick={agregar} color="success">Guardar</Button></td>
                                 </tr>
+                        </tbody>
+                    </Table>
+                </Container>
+                <Container>
+                    <br /><br /><a>Editar Venta</a><br /><br />
+                    <Table>
+                        <thead><tr><th>ID</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Rol</th>
+                            <th>Estado</th>
+                            <th>Acciones</th></tr></thead>
+                        <tbody>
+                            <tr>
+                                <td>104</td>
+                                <td><input type="text"></input></td>
+                                <td><input type="text"></input></td>
+                                <td><input type="text"></input></td>
+                                <td><input type="number"></input></td>
+                                <td><Button onClick={editar} color="primary">Guardar</Button></td>
+                            </tr>
                         </tbody>
                     </Table>
                 </Container>

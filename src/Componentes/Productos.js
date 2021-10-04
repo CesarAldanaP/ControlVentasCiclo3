@@ -12,6 +12,14 @@ const data = [
     { id: 6, Nombre: " Teclado ", Referencia: " Logitech ", Marca: "Logitech", VUnit: " 65000 ", },
 ];
 
+const agregar = () => {
+    window.alert("Producto Agregado Exitosamente")
+}
+
+const editar = () => {
+    window.alert("Producto Editado Exitosamente")
+}
+
 class Productos extends React.Component {
     state = {
         data: data,
@@ -21,7 +29,9 @@ class Productos extends React.Component {
             <>
                 <Container>
                     <br /><br /><a>Productos</a><br /><br />
-                    <Button color="success">Agregar Producto</Button>
+                    <Button color="success">Agregar Producto</Button>{"    "}
+                    <Button color="primary">Buscar</Button>
+                    <input type="text"></input>
                     <br /><br />
                     <Table>
                         <thead><tr><th>ID</th>
@@ -61,7 +71,28 @@ class Productos extends React.Component {
                                 <td><input type="text"></input></td>
                                 <td><input type="text"></input></td>
                                 <td><input type="number"></input></td>
-                                <td><Button color="success">Guardar</Button></td>
+                                <td><Button onClick={agregar} color="success">Guardar</Button></td>
+                            </tr>
+                        </tbody>
+                    </Table>
+                </Container>
+                <Container>
+                    <br /><br /><a>Editar Producto</a><br /><br />
+                    <Table>
+                        <thead><tr><th>ID</th>
+                            <th>Nombre</th>
+                            <th>Referencia</th>
+                            <th>Marca</th>
+                            <th>Valor Unitario</th>
+                            <th>Acciones</th></tr></thead>
+                        <tbody>
+                            <tr>
+                                <td>3</td>
+                                <td><input type="text"></input></td>
+                                <td><input type="text"></input></td>
+                                <td><input type="text"></input></td>
+                                <td><input type="number"></input></td>
+                                <td><Button onClick={editar} color="primary">Guardar</Button></td>
                             </tr>
                         </tbody>
                     </Table>

@@ -12,9 +12,9 @@ function App() {
 <div className="App">
       <Banner/>
       <Board/>
-      <Usuarios/>
-      <Productos/>
-      <Ventas/>
+      <div id="users"><Usuarios /></div>
+      <div id="sales"><Ventas/></div >
+      <div id="products"><Productos /></div>
     </div>
   );
 }
