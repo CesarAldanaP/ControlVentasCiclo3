@@ -29,7 +29,9 @@ class Usuarios extends React.Component {
             <>
                 <Container>
                     <br /><br /><a>Usuarios</a><br /><br />
-                    <Button color="success">Agregar Usuario</Button>
+                    <Button color="success">Agregar Usuario</Button>{"    "}
+                    <Button color="primary">Buscar</Button>
+                    <input type="text"></input>
                     <br /><br />
                     <Table>
                         <thead><tr><th>ID</th>

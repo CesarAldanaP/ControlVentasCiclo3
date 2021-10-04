@@ -29,7 +29,9 @@ class Ventas extends React.Component {
             <>
                 <Container>
                     <br /><br /><a>Ventas</a><br /><br />
-                    <Button color="success">Agregar Venta</Button>
+                    <Button color="success">Agregar Venta</Button>{"    "}
+                    <Button color="primary">Buscar</Button>
+                    <input type="text"></input>
                     <br /><br />
                     <Table>
                         <thead><tr><th>ID</th>
