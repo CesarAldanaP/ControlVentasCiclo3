@@ -4,12 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Table, Button, Container } from "reactstrap"
 
 const data = [
-    { id: 1, Nombre: " Televisor ", Referencia: " LG ", Marca: "LG", VUnit: " 5400000 " },
-    { id: 2, Nombre: " Celular ", Referencia: " Iphone ", Marca: "Iphone", VUnit: " 6200000 " },
-    { id: 3, Nombre: " Portátil ", Referencia: " ASUS ", Marca: "ASUS", VUnit: " 2800000 " },
-    { id: 4, Nombre: " Manos libres ", Referencia: " SONY ", Marca: "SONY", VUnit: " 190000 " },
-    { id: 5, Nombre: " Mouse ", Referencia: " Logitech ", Marca: "Logitech", VUnit: " 45000 " },
-    { id: 6, Nombre: " Teclado ", Referencia: " Logitech ", Marca: "Logitech", VUnit: " 65000 ", },
+    { id: 1, Fecha: " 28/Sep/2021 ", Hora: " 15:08 ", Elementos: "1,2,3", Cliente: "Homecenter", VVenta: " 2401400 " },
+    { id: 2, Fecha: " 29/Sep/2021 ", Hora: " 8:48 ", Elementos: "1,2,3", Cliente: "Exito", VVenta: " 4250100 " },
+    { id: 3, Fecha: " 30/Sep/2021 ", Hora: " 11:21 ", Elementos: "1,2,3", Cliente: "Carulla", VVenta: " 24050150 " },
+    { id: 4, Fecha: " 01/Oct/2021 ", Hora: " 8:56 ", Elementos: "1,2,3", Cliente: "Exito", VVenta: " 1125200 " }
+    ,
 ];
 
 const agregar = () => {
@@ -28,26 +27,28 @@ class Ventas extends React.Component {
         return (
             <>
                 <Container>
-                    <br /><br /><a>Ventas</a><br /><br />
+                    <br /><br /><br /><a>Ventas</a><br /><br />
                     <Button color="success">Agregar Venta</Button>{"    "}
-                    <Button color="primary">Buscar</Button>
+                    <Button color="primary">Buscar</Button>{"    "}
                     <input type="text"></input>
                     <br /><br />
                     <Table>
                         <thead><tr><th>ID</th>
-                            <th>Nombre</th>
-                            <th>Referencia</th>
-                            <th>Marca</th>
-                            <th>Valor Unitario</th>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Elementos</th>
+                            <th>Cliente</th>
+                            <th>Valor Venta</th>
                             <th>Acciones</th></tr></thead>
                         <tbody>
                             {this.state.data.map((elemento) => (
                                 <tr>
                                     <td>{elemento.id}</td>
-                                    <td>{elemento.Nombre}</td>
-                                    <td>{elemento.Referencia}</td>
-                                    <td>{elemento.Marca}</td>
-                                    <td>{elemento.VUnit}</td>
+                                    <td>{elemento.Fecha}</td>
+                                    <td>{elemento.Hora}</td>
+                                    <td>{elemento.Elementos}</td>
+                                    <td>{elemento.Cliente}</td>
+                                    <td>{elemento.VVenta}</td>
                                     <td><Button color="primary">Editar</Button>{"   "}
                                         <Button color="danger">Eliminar</Button></td>
                                 </tr>
@@ -59,20 +60,22 @@ class Ventas extends React.Component {
                     <br /><br /><a>Agregar Venta</a><br /><br />
                     <Table>
                         <thead><tr><th>ID</th>
-                            <th>Nombre</th>
-                            <th>Referencia</th>
-                            <th>Marca</th>
-                            <th>Valor Unitario</th>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Elementos</th>
+                            <th>Cliente</th>
+                            <th>Valor Venta</th>
                             <th>Acciones</th></tr></thead>
                         <tbody>
-                                <tr>
-                                    <td><input type="text"></input></td>
-                                    <td><input type="text"></input></td>
-                                    <td><input type="text"></input></td>
-                                    <td><input type="text"></input></td>
-                                    <td><input type="text"></input></td>
+                            <tr>
+                                <td>5</td>
+                                <td><input type="text"></input></td>
+                                <td><input type="text"></input></td>
+                                <td><input type="text"></input></td>
+                                <td><input type="text"></input></td>
+                                <td><input type="number"></input></td>
                                 <td><Button onClick={agregar} color="success">Guardar</Button></td>
-                                </tr>
+                            </tr>
                         </tbody>
                     </Table>
                 </Container>
@@ -80,17 +83,19 @@ class Ventas extends React.Component {
                     <br /><br /><a>Editar Venta</a><br /><br />
                     <Table>
                         <thead><tr><th>ID</th>
-                            <th>Nombre</th>
-                            <th>Apellido</th>
-                            <th>Rol</th>
-                            <th>Estado</th>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Elementos</th>
+                            <th>Cliente</th>
+                            <th>Valor Venta</th>
                             <th>Acciones</th></tr></thead>
                         <tbody>
                             <tr>
-                                <td>104</td>
+                                <td>2</td>
                                 <td><input type="text"></input></td>
                                 <td><input type="text"></input></td>
                                 <td><input type="text"></input></td>
+                                <td><input type="number"></input></td>
                                 <td><input type="number"></input></td>
                                 <td><Button onClick={editar} color="primary">Guardar</Button></td>
                             </tr>

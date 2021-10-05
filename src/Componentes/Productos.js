@@ -28,9 +28,9 @@ class Productos extends React.Component {
         return (
             <>
                 <Container>
-                    <br /><br /><a>Productos</a><br /><br />
+                    <br /><br /><br /><a>Productos</a><br /><br />
                     <Button color="success">Agregar Producto</Button>{"    "}
-                    <Button color="primary">Buscar</Button>
+                    <Button color="primary">Buscar</Button>{"    "}
                     <input type="text"></input>
                     <br /><br />
                     <Table>

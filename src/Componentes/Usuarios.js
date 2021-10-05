@@ -1,7 +1,8 @@
 import '../App.css';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Table, Button, Container } from "reactstrap"
+import { Table, Button, Container, } from "reactstrap"
+import { TextField } from '@material-ui/core';
 
 const data = [
     { id: 101, Nombre: " Cesar ", Apellido: " Aldana ", Rol: "Vendedor", Estado: " Activo " },
@@ -28,9 +29,9 @@ class Usuarios extends React.Component {
         return (
             <>
                 <Container>
-                    <br /><br /><a>Usuarios</a><br /><br />
+                    <br /><br /><br /><a>Usuarios</a><br /><br />
                     <Button color="success">Agregar Usuario</Button>{"    "}
-                    <Button color="primary">Buscar</Button>
+                    <Button color="primary">Buscar</Button>{"    "}
                     <input type="text"></input>
                     <br /><br />
                     <Table>
