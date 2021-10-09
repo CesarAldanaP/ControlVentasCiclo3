@@ -1,7 +1,7 @@
 .banner{
     position: fixed;
     top: 0;
-    height: 50px;
+    height: 30px;
     width: 100%;
     background: #017bf5;
     display: flex;
@@ -30,10 +30,9 @@
     height: inherit;
     transition: 0.3s linear;
 }
-.banner ul li a{
+.banner ul li .boton{
     position: relative;
-    display: flex;
-    height: 116%;
+    height: 112%;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -45,7 +44,11 @@
     letter-spacing: 0.5px;
     transition:0.3s linear;
 }
-.banner ul li:hover a{
+.banner ul li:hover .boton{
     background: #fff;
     color: #017bf5;
+}
+.botones{
+    position: relative;
+    letter-spacing: 15px;
 }
