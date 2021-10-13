@@ -1,5 +1,5 @@
 import Dialog from '@material-ui/core/Dialog';
-import LoginG from '../LoginG';
+import LoginG from '../../LoginG';
 
 const ModalLogin = ({ open, cerrar }) => {
 

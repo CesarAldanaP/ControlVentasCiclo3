@@ -1,7 +1,7 @@
 import { AppBar, Toolbar, Button } from '@material-ui/core';
 import React, {useState} from 'react'
 import './css/Banner.css'
-import ModalLogin from './ModalLogin'
+import ModalLogin from './VentanasModal/ModalLogin'
 
 const Banner = () => {
 
@@ -23,6 +23,7 @@ const Banner = () => {
                     <li><Button className="boton" href="Users">Usuarios</Button></li>
                     <li><Button className="boton" href="Sales">Ventas</Button></li>
                     <li><Button className="boton" href="Products">Productos</Button></li>
+                    <li><Button className="boton" href="Tabla">TProducts</Button></li>
                     <li><Button className="boton" onClick={abrirModal}>Login</Button></li>
                 </ul>
             </Toolbar>

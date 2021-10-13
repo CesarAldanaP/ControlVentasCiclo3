@@ -30,6 +30,8 @@ class Productos extends React.Component {
                 <Container>
                     <br /><br /><br /><a>Productos</a><br /><br />
                     <Button color="success">Agregar Producto</Button>{"    "}
+                    <Button color="primary">Editar</Button>{"    "}
+                    <Button color="danger">Eliminar</Button>{"    "}
                     <Button color="primary">Buscar</Button>{"    "}
                     <input type="text"></input>
                     <br /><br />
@@ -38,8 +40,7 @@ class Productos extends React.Component {
                             <th>Nombre</th>
                             <th>Referencia</th>
                             <th>Marca</th>
-                            <th>Valor Unitario</th>
-                            <th>Acciones</th></tr></thead>
+                            <th>Valor Unitario</th></tr></thead>
                         <tbody>
                             {this.state.data.map((elemento) => (
                                 <tr>
@@ -48,8 +49,6 @@ class Productos extends React.Component {
                                     <td>{elemento.Referencia}</td>
                                     <td>{elemento.Marca}</td>
                                     <td>{elemento.VUnit}</td>
-                                    <td><Button color="primary">Editar</Button>{"   "}
-                                        <Button color="danger">Eliminar</Button></td>
                                 </tr>
                             ))}
                         </tbody>
@@ -62,8 +61,7 @@ class Productos extends React.Component {
                             <th>Nombre</th>
                             <th>Referencia</th>
                             <th>Marca</th>
-                            <th>Valor Unitario</th>
-                            <th>Acciones</th></tr></thead>
+                            <th>Valor Unitario</th></tr></thead>
                         <tbody>
                             <tr>
                                 <td>7</td>
@@ -83,8 +81,7 @@ class Productos extends React.Component {
                             <th>Nombre</th>
                             <th>Referencia</th>
                             <th>Marca</th>
-                            <th>Valor Unitario</th>
-                            <th>Acciones</th></tr></thead>
+                            <th>Valor Unitario</th></tr></thead>
                         <tbody>
                             <tr>
                                 <td>3</td>
