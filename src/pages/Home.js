@@ -1,7 +1,7 @@
-import React from 'react';
-import './css/Board.css'
+import React from 'react'
+import '../Componentes/css/Board.css'
 
-const Board = () => {
+const Home = () => {
     return (
         <div className="board">
             <div className="board-info">
@@ -13,4 +13,4 @@ const Board = () => {
     )
 }
 
-export default Board;
+export default Home

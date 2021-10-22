@@ -1,15 +1,15 @@
-import Dialog from '@material-ui/core/Dialog';
-import LoginG from '../../LoginG';
+import Dialog from "@material-ui/core/Dialog";
+import Login from "../Login/Login.component";
+/* import Signup from "../Sign-up/Signup.component"; */
 
 const ModalLogin = ({ open, cerrar }) => {
+  return (
+    <Dialog open={open} onClose={cerrar}>
 
-    return (
-        <Dialog open={open} onClose={cerrar}>
-            <LoginG cerrarFormulario={cerrar} />
-        </Dialog>
+      <Login cerrarFormulario={cerrar} />
 
-    );
-
-}
+    </Dialog>
+  );
+};
 
 export default ModalLogin;
